@@ -1,0 +1,13 @@
+pypdf>=4.0.0
+pdfplumber>=0.11.0      # markdown/table-aware PDF extraction (ingestion/markdown_extract.py)
+python-docx>=1.1.0
+sentence-transformers>=2.7.0  # embeddings + CrossEncoder reranker
+chromadb>=0.5.0
+rank_bm25>=0.2.2          # BM25 lexical search for hybrid retrieval
+tiktoken>=0.7.0
+watchdog>=4.0.0
+python-dotenv>=1.0.0
+fastapi>=0.111.0
+uvicorn>=0.30.0
+requests>=2.31.0        # needed if LLM_PROVIDER=ollama (local HTTP call)
+google-genai>=0.3.0      # needed if LLM_PROVIDER=gemini (default)

@@ -1,0 +1,12 @@
+
+.env
+data/vector_store/
+data/extracted_markdown/
+data/state/
+data/source_docs/*
+!data/source_docs/.gitkeep
+logs/
+__pycache__/
+*.pyc
+.venv/
+

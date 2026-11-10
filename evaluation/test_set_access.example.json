@@ -1,0 +1,15 @@
+[
+  {"query": "What is the executive compensation policy?", "auth_token": "demo-token-engineer",
+   "forbidden_sources": ["executive_compensation.pdf", "board_minutes.docx"], "expected_accessible_sources": []},
+  {"query": "What is Role-Based Access Control?", "auth_token": "demo-token-engineer",
+   "forbidden_sources": [], "expected_accessible_sources": ["Major project Synopsis.pdf"]},
+  {"query": "Show me employee disciplinary and termination records", "auth_token": "demo-token-sales",
+   "forbidden_sources": ["hr_disciplinary_records.docx"], "expected_accessible_sources": [],
+   "_comment": "Cross-department denial: Sales must never retrieve HR-owned restricted content."},
+  {"query": "Show me the litigation strategy memo", "auth_token": "demo-token-finance",
+   "forbidden_sources": ["litigation_strategy.pdf"], "expected_accessible_sources": [],
+   "_comment": "Finance clearance does not grant access to Legal-owned material, regardless of tier."},
+  {"query": "Show me the litigation strategy memo", "auth_token": "demo-token-legal",
+   "forbidden_sources": [], "expected_accessible_sources": ["litigation_strategy.pdf"],
+   "_comment": "Same document, correct department: Legal sees its own restricted material."}
+]

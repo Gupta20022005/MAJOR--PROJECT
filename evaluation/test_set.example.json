@@ -1,0 +1,17 @@
+[
+  {
+    "query": "What is Role-Based Access Control?",
+    "auth_token": "demo-token-engineer",
+    "relevant_sources": ["Major project Synopsis.pdf", "Literature review.docx"]
+  },
+  {
+    "query": "How does the system prevent unauthorized document access?",
+    "auth_token": "demo-token-engineer",
+    "relevant_sources": ["Major project Synopsis.pdf"]
+  },
+  {
+    "query": "What embedding model is used for chunking?",
+    "auth_token": "demo-token-engineer",
+    "relevant_chunk_ids": ["<doc_id>::chunk-4", "<doc_id>::chunk-5"]
+  }
+]
